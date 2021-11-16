@@ -31,7 +31,9 @@ class ContohResource(Resource):
         #print("COBA PRINT", nama)
         identitas["nama"] = nama
         identitas["umur"] = umur
-        response = {"msg": "Data berhasil dimasukkan"}
+        response = {"msg": "Data berhasil dimasukkan",
+                    "nama": nama,
+                    "umur": umur}
         return response
 
 
